@@ -80,37 +80,37 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E    &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A    &kp S         &kp D    &kp F                        &kp G        &kp SEMICOLON                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp RCTRL
-&kp Z    &kp X         &kp C    &kp V                        &kp B        &kp FSLH                           &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC  &kp LEFT_WIN  &kp DEL  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp RIGHT_ALT
+&kp Q    &kp W         &kp E    &kp R                        &kp T                                                        &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&kp A    &kp S         &kp D    &kp F                        &kp G        &kp SEMICOLON                      &kp MINUS    &kp H            &kp J  &kp K      &kp L    &kp RCTRL
+&kp Z    &kp X         &kp C    &kp V                        &kp B        &kp FSLH                           &kp EQUAL    &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp ESC  &kp LEFT_WIN  &kp DEL  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 3 ENTER  &lt 1 BACKSPACE                             &kp RIGHT_ALT
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &kp F7   &kp F8   &kp F9  &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &kp F4   &kp F5   &kp F6  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F10  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F12  &trans  &trans   &trans      &trans  &trans                          &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                     &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp BSLH       &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &trans
+&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &kp PERCENT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans
+&kp PIPE   &trans           &trans           &trans           &trans        &trans         &trans          &trans                                                                     &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -118,10 +118,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                                &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O    &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &to_layer_0 SEMICOLON      &to_layer_0 MINUS  &to_layer_0 H  &mkp MB1       &mkp MB3       &mkp MB2         &to_layer_0 RCTRL
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 FSLH           &to_layer_0 EQUAL  &to_layer_0 N  &mkp MB4       &mkp MB5       &to_layer_0 DOT  &to_layer_0 RSHFT
+&trans         &trans         &trans         &trans         &trans         &trans                     &trans             &trans                                                        &to_layer_0 RALT
             >;
         };
 
