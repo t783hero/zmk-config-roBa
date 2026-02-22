@@ -92,28 +92,28 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E    &kp R  &kp T                                        &kp Y            &kp U  &lt 5 I    &kp O    &kp P
-&kp A    &kp S         &kp D    &kp F  &kp G        &kp SEMICOLON      &kp MINUS    &kp H            &kp J  &kp K      &kp L    &kp RCTRL
-&kp Z    &kp X         &kp C    &kp V  &kp B        &kp FSLH           &kp EQUAL    &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC  &kp LEFT_WIN  &kp DEL  &mo 6  &lt 2 SPACE  &kp TAB            &lt 3 ENTER  &lt 1 BACKSPACE                             &kp RIGHT_ALT
+&kp Q    &kp W         &kp E    &kp R  &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&kp A    &kp S         &kp D    &kp F  &kp G        &kp SEMICOLON      &kp MINUS  &kp H            &kp J  &kp K      &kp L    &kp ENTER
+&kp Z    &kp X         &kp C    &kp V  &kp B        &kp FSLH           &kp EQUAL  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp ESC  &kp LEFT_WIN  &kp DEL  &mo 6  &lt 2 SPACE  &lt 3 TAB          &kp RCTRL  &lt 1 BACKSPACE                             &kp RIGHT_ALT
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans   &kp F7   &kp F8   &kp F9  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans   &kp F4   &kp F5   &kp F6  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp F10  &kp F1   &kp F2   &kp F3  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp F11  &kp F12  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                     &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp BSLH       &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &trans
-&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &kp PERCENT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans
-&kp PIPE   &trans           &trans           &trans           &trans        &trans         &trans          &trans                                                                     &trans
+&kp N1     &kp N2  &kp N3    &kp N4      &kp N5                               &kp N6     &kp N7    &kp N8     &kp N9                &kp N0
+&kp EXCL   &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LBKT      &kp RBKT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans     &trans  &trans    &trans      &trans       &trans        &trans    &trans     &trans    &trans     &trans                &trans
+&kp GRAVE  &trans  &trans    &trans      &trans       &trans        &trans    &trans                                                &kp BSLH
             >;
         };
 
@@ -128,10 +128,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R      &to_layer_0 T                                                    &to_layer_0 Y        &to_layer_0 U  &lt_to_layer_0 5 I  &to_layer_0 O    &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F      &to_layer_0 G      &to_layer_0 SEMICOLON      &to_layer_0 MINUS  &to_layer_0 H        &to_layer_0 J  &to_layer_0 J       &to_layer_0 L    &trans
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V      &to_layer_0 B      &to_layer_0 FSLH           &to_layer_0 EQUAL  &to_layer_0 N        &to_layer_0 M  &to_layer_0 J       &to_layer_0 DOT  &trans
-&trans         &trans         &trans         &mkp_exit_AML MB3  &mkp_exit_AML MB1  &mkp_exit_AML MB2          &mkp_exit_AML MB4  &mkp_to_layer_0 MB5                                                      &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                                &to_layer_0 Y  &to_layer_0 U  &lt_to_layer_0 5 I  &to_layer_0 O    &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &to_layer_0 SEMICOLON      &to_layer_0 MINUS  &to_layer_0 H  &to_layer_0 J  &to_layer_0 J       &to_layer_0 L    &kp RCTRL
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &to_layer_0 FSLH           &to_layer_0 EQUAL  &to_layer_0 N  &to_layer_0 M  &to_layer_0 J       &to_layer_0 DOT  &trans
+&trans         &trans         &trans         &mkp MB3       &mkp MB1       &mkp MB2                   &mkp MB4           &mkp MB5                                                           &trans
             >;
         };
 
