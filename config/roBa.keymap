@@ -25,6 +25,8 @@
     // };
 };
 
+&sl { release-after-ms = <250>; };
+
 / {
     combos {
         compatible = "zmk,combos";
