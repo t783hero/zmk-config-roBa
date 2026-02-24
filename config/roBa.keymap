@@ -40,6 +40,11 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
         };
+
+        henkann {
+            bindings = <&kp LS(CAPS)>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -74,6 +79,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "balanced";
         };
 
         mmt: mmt {
@@ -82,8 +88,8 @@
             bindings = <&kp>, <&mkp_exit_AML>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <201>;
-            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
 
         mt_to_layer_0: mt_to_layer_0 {
@@ -93,6 +99,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -101,10 +108,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp E       &kp R  &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
-&mt LCTRL A       &kp S             &kp D       &kp F  &kp G        &kp SEMICOLON      &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X             &kp C       &kp V  &kp B        &kp FSLH           &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC           &kp LS(CAPSLOCK)  &kp DELETE  &mo 6  &lt 2 SPACE  &kp LEFT_WIN       &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_ALT
+&kp Q             &kp W         &kp E       &kp R  &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D       &kp F  &kp G        &kp SEMICOLON      &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C       &kp V  &kp B        &kp FSLH           &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp ESC           &kp LEFT_ALT  &kp DELETE  &mo 6  &lt 2 SPACE  &kp LEFT_WIN       &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_ALT
             >;
         };
 
