@@ -111,7 +111,7 @@
 &kp Q             &kp W         &kp E       &kp R  &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
 &mt LCTRL A       &kp S         &kp D       &kp F  &kp G        &kp SEMICOLON      &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C       &kp V  &kp B        &kp FSLH           &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC           &kp LEFT_WIN  &kp DELETE  &mo 6  &lt 2 SPACE  &kp LCTRL          &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_ALT
+&kp ESC           &kp LEFT_WIN  &kp DELETE  &mo 6  &lt 2 SPACE  &lt 1 TAB          &kp RCTRL  &lt 3 BACKSPACE                             &kp RIGHT_ALT
             >;
         };
 
