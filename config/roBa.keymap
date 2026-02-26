@@ -69,13 +69,26 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        mo_to_layer_0: mo_to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&to 0>,
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            label = "MO_TO_LAYER_0";
+        };
     };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo_to_layer_0>, <&to_layer_0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
