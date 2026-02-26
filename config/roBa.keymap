@@ -69,19 +69,6 @@
 
             label = "MKP_EXIT_AML";
         };
-
-        mo_exit_AML: mo_exit_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&tog_off 4 &to 0>,
-                <&macro_press>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>;
-
-            label = "MO_EXIT_AML";
-        };
     };
 
     behaviors {
@@ -102,23 +89,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
-            flavor = "balanced";
-        };
-
-        tog_off: tog_off {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_OFF";
-            #binding-cells = <1>;
-            toggle-mode = "off";
-        };
-
-        lt_exit_AML: lt_exit_AML {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_EXIT_AML";
-            bindings = <&mo_exit_AML>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
             flavor = "balanced";
         };
     };
@@ -164,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q                &to_layer_0 W      &to_layer_0 E      &to_layer_0 R      &to_layer_0 T                                                        &to_layer_0 Y             &to_layer_0 U  &lt_exit_AML 5 I   &to_layer_0 O    &to_layer_0 P
-&mt_to_layer_0 LCTRL A       &to_layer_0 S      &to_layer_0 D      &to_layer_0 F      &to_layer_0 G         &to_layer_0 SEMICOLON      &to_layer_0 EQUAL   &to_layer_0 H             &to_layer_0 J  &to_layer_0 K      &to_layer_0 L    &mt_to_layer_0 RCTRL ENTER
-&mt_to_layer_0 LEFT_SHIFT Z  &to_layer_0 X      &to_layer_0 C      &to_layer_0 V      &to_layer_0 B         &to_layer_0 FSLH           &to_layer_0 MINUS   &to_layer_0 N             &to_layer_0 M  &to_layer_0 COMMA  &to_layer_0 DOT  &trans
-&to_layer_0 ESC              &mkp_exit_AML MB4  &mkp_exit_AML MB5  &mkp_exit_AML MB1  &lt_exit_AML 2 SPACE  &mkp_exit_AML MB2          &lt_exit_AML 1 TAB  &lt_exit_AML 3 BACKSPACE                                                     &trans
+&to_layer_0 Q                &to_layer_0 W      &to_layer_0 E      &to_layer_0 R      &to_layer_0 T                                                            &to_layer_0 Y               &to_layer_0 U  &lt_to_layer_0 5 I  &to_layer_0 O    &to_layer_0 P
+&mt_to_layer_0 LCTRL A       &to_layer_0 S      &to_layer_0 D      &to_layer_0 F      &to_layer_0 G           &to_layer_0 SEMICOLON      &to_layer_0 EQUAL     &to_layer_0 H               &to_layer_0 J  &to_layer_0 K       &to_layer_0 L    &mt_to_layer_0 RCTRL ENTER
+&mt_to_layer_0 LEFT_SHIFT Z  &to_layer_0 X      &to_layer_0 C      &to_layer_0 V      &to_layer_0 B           &to_layer_0 FSLH           &to_layer_0 MINUS     &to_layer_0 N               &to_layer_0 M  &to_layer_0 COMMA   &to_layer_0 DOT  &trans
+&to_layer_0 ESC              &mkp_exit_AML MB4  &mkp_exit_AML MB5  &mkp_exit_AML MB1  &lt_to_layer_0 2 SPACE  &mkp_exit_AML MB2          &lt_to_layer_0 1 TAB  &lt_to_layer_0 3 BACKSPACE                                                      &trans
             >;
         };
 
