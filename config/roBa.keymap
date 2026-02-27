@@ -91,6 +91,26 @@
             tapping-term-ms = <300>;
             flavor = "balanced";
         };
+
+        lmt: lmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LMT";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        mmt: mmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MMT";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -98,10 +118,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E       &kp R  &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D       &kp F  &kp G        &kp SEMICOLON      &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C       &kp V  &kp B        &kp FSLH           &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC           &kp LEFT_WIN  &kp DELETE  &mo 6  &lt 2 SPACE  &kp LEFT_ALT       &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_ALT
+&kp Q             &kp W         &kp E       &kp R       &kp T                                          &kp Y            &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D       &kp F       &kp G        &kp SEMICOLON          &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C       &kp V       &kp B        &kp FSLH               &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp ESC           &kp LEFT_WIN  &kp DELETE  &lmt 6 MB1  &lt 2 SPACE  &mmt LEFT_ALT MB2      &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_ALT
             >;
         };
 
@@ -125,10 +145,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE        &kp LC(LS(TAB))    &kp UP_ARROW    &kp LC(TAB)      &trans                          &trans  &trans  &trans  &trans  &trans
-&kp HOME          &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp PG_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(LG(K))     &kp C_MUTE         &kp C_VOL_DN    &kp C_VOL_UP     &trans   &kp PG_DN      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans          &trans           &trans   &trans         &trans  &trans                          &trans
+&kp ESCAPE        &kp LC(LS(TAB))    &kp UP_ARROW      &kp LC(TAB)      &trans                          &trans  &trans  &trans  &trans  &trans
+&kp HOME          &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp END  &kp PG_UP      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(LG(K))     &kp C_MUTE         &kp C_VOL_DN      &kp C_VOL_UP     &trans   &kp PG_DN      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)  &trans           &trans   &trans         &trans  &trans                          &trans
             >;
         };
 
