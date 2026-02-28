@@ -15,14 +15,6 @@
 };
 
 / {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        excluded-positions = <37 39>
-    }
-}
-
-/ {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
