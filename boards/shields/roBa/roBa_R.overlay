@@ -1,7 +1,12 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
+};
+
+&zip_temp_layer {
+    excluded-positions = <37 39>;
 };
 
 &kscan0 {
@@ -19,6 +24,8 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 3000>;
     };
 };
 
