@@ -5,6 +5,7 @@
 
 &mt {
     flavor = "balanced";
+    quick-tap-ms = <0>;
     tapping-term-ms = <300>;
 };
 
@@ -18,6 +19,7 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
+
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
