@@ -24,7 +24,7 @@
     // };
 };
 
-&sl { release-after-ms = <400>; };
+&sl { release-after-ms = <250>; };
 
 / {
     combos {
