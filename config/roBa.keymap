@@ -6,6 +6,7 @@
 &mt {
     flavor = "balanced";
     tapping-term-ms = <300>;
+    quick-tap-ms = <0>;
 };
 
 &trackball {
