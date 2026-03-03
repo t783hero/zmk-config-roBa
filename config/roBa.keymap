@@ -42,6 +42,11 @@
 
         henkann {
             bindings = <&kp LS(CAPS)>;
+            key-positions = <10 11>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
     };
@@ -120,7 +125,7 @@
 &kp Q             &kp W       &kp E     &kp R     &kp T                                      &kp Y            &kp U  &lt 5 I    &kp O    &kp P
 &mt LCTRL A       &kp S       &kp D     &kp F     &kp G        &kp SEMICOLON      &kp EQUAL  &kp H            &kp J  &kp K      &kp L    &mt RCTRL ENTER
 &mt LEFT_SHIFT Z  &kp X       &kp C     &kp V     &kp B        &kp FSLH           &kp MINUS  &kp N            &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp ESC           &lmt 6 MB4  &mkp MB5  &mkp MB1  &lt 2 SPACE  &kp LEFT_ALT       &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_WIN
+&kp LEFT_WIN      &lmt 6 MB4  &mkp MB5  &mkp MB1  &lt 2 SPACE  &kp LEFT_ALT       &lt 1 TAB  &lt 3 BACKSPACE                             &kp RIGHT_WIN
             >;
         };
 
