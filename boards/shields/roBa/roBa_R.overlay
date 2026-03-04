@@ -6,7 +6,7 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <37 39>;
+    excluded-positions = <37 38>;
 };
 
 &kscan0 {
