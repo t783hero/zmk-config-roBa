@@ -43,7 +43,7 @@
 
         henkann {
             bindings = <&kp LS(CAPS)>;
-            key-positions = <1 2>;
+            key-positions = <8 9>;
         };
 
         escape {
