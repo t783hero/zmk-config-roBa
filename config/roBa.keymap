@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -44,12 +43,12 @@
 
         henkann {
             bindings = <&kp LS(CAPS)>;
-            key-positions = <10 11>;
+            key-positions = <1 2>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 0>;
         };
     };
 
@@ -151,10 +150,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE        &kp LC(LS(TAB))    &kp UP_ARROW      &kp LC(TAB)      &trans                            &trans  &trans  &trans  &trans  &trans
-&kp HOME          &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp END    &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(LG(K))     &kp C_MUTE         &kp C_VOL_DN      &kp C_VOL_UP     &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)  &trans           &kp PG_UP  &kp PG_DN      &trans  &trans                          &trans
+&kp ESCAPE        &kp LC(LS(TAB))    &kp UP_ARROW      &kp LC(TAB)      &trans                         &trans  &trans  &trans  &trans  &trans
+&kp HOME          &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp END    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(LG(K))     &kp C_MUTE         &kp C_VOL_DN      &kp C_VOL_UP     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)  &kp PG_UP        &kp PG_DN  &trans      &trans  &trans                          &trans
             >;
         };
 
