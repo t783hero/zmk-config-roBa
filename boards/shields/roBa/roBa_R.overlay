@@ -7,6 +7,7 @@
 
 &zip_temp_layer {
     excluded-positions = <18 19>;
+    require-prior-idle-ms = <200>;
 };
 
 &kscan0 {
