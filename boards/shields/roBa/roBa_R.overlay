@@ -6,7 +6,7 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <18 19>;
+    excluded-positions = <10 18 19 21 22 33 38>;
     require-prior-idle-ms = <200>;
 };
 
