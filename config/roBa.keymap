@@ -27,6 +27,8 @@
 
 &sl { release-after-ms = <250>; };
 
+&lt { flavor = "hold-preferred"; };
+
 / {
     combos {
         compatible = "zmk,combos";
