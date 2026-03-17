@@ -27,8 +27,6 @@
 
 &sl { release-after-ms = <250>; };
 
-&lt { flavor = "hold-preferred"; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -120,16 +118,6 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
-
-        scroll_lt: scroll_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SCROLL_LT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
@@ -137,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E            &kp R               &kp T                                             &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
-&mt LCTRL A       &kp S  &kp D            &kp F               &kp G              &kp SEMICOLON      &kp EQUAL   &kp H        &kp J  &kp K           &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X  &kp C            &kp V               &kp B              &kp FSLH           &kp TAB     &kp N        &kp M  &kp COMMA       &kp DOT  &kp RIGHT_SHIFT
-&kp LEFT_WIN      &mo 6  &kp PRINTSCREEN  &mmt RIGHT_WIN MB1  &mmt LEFT_ALT MB2  &lt 2 SPACE        &lt 3 BSPC  &lt 1 MINUS                                  &kp RIGHT_ALT
+&kp Q             &kp W  &kp E            &kp R               &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A       &kp S  &kp D            &kp F               &kp G              &kp SEMICOLON      &kp EQUAL   &kp H        &kp J  &kp K      &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X  &kp C            &kp V               &kp B              &kp FSLH           &kp TAB     &kp N        &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LEFT_WIN      &mo 6  &kp PRINTSCREEN  &mmt RIGHT_WIN MB1  &mmt LEFT_ALT MB2  &lt 2 SPACE        &lt 3 BSPC  &lt 1 MINUS                             &kp RIGHT_ALT
             >;
         };
 
@@ -164,10 +152,10 @@
 
         MISSIONCTRL {
             bindings = <
-&kp ESCAPE  &trans            &kp LG(UP)    &trans             &trans                      &trans  &trans  &trans  &trans  &trans
-&trans      &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE  &kp LG(LA(K))     &kp C_VOL_DN  &kp C_VOL_UP       &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans            &trans        &trans             &trans  &trans      &trans  &trans                          &trans
+&kp ESCAPE     &trans            &kp LG(UP)    &trans             &trans                      &trans  &trans  &trans  &trans  &trans
+&trans         &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LA(K))  &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP       &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans            &trans        &trans             &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
