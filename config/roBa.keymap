@@ -8,6 +8,7 @@
     quick-tap-ms = <150>;
     require-prior-idle-ms = <120>;
     tapping-term-ms = <170>;
+    hold-trigger-on-release;
 };
 
 &trackball {
