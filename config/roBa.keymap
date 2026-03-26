@@ -27,7 +27,7 @@
     // };
 };
 
-&sl { release-after-ms = <250>; };
+&sl { release-after-ms = <200>; };
 
 &lt { flavor = "hold-preferred"; };
 
@@ -144,28 +144,28 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W            &kp E      &kp R             &kp T                                               &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
-&mt LCTRL A       &kp S            &kp D      &kp F             &kp G                &kp EQUAL          &mkp MB2    &kp H        &kp J  &kp K           &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X            &kp C      &kp V             &kp B                &kp SEMICOLON      &mkp MB1    &kp N        &kp M  &kp COMMA       &kp DOT  &kp RIGHT_SHIFT
-&kp LEFT_ALT      &kp PRINTSCREEN  &kp SLASH  &mt LEFT_WIN TAB  &mt RIGHT_ALT SPACE  &lt 2 SPACE        &lt 3 BSPC  &lt 1 MINUS                                  &mo 6
+&kp Q             &kp W          &kp E      &kp R              &kp T                                                  &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
+&mt LCTRL A       &kp S          &kp D      &kp F              &kp G              &mkp MB1         &kp LEFT_BRACKET   &kp H        &kp J  &kp K           &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X          &kp C      &kp V              &kp B              &mkp MB2         &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA       &kp DOT  &kp RIGHT_SHIFT
+&kp EQUAL         &kp SEMICOLON  &kp SLASH  &mmt LEFT_WIN MB1  &mmt LEFT_ALT MB2  &lt 2 SPACE      &lt 3 BSPC         &lt 1 MINUS                                  &mo 6
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4     &kp F5                       &kp F6  &kp F7    &kp F8    &kp F9     &kp F10
-&trans  &trans  &kp PG_UP  &kp PG_DN  &trans  &trans       &trans  &trans  &trans    &kp UP    &kp F11    &kp F12
-&trans  &trans  &kp HOME   &kp END    &trans  &trans       &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &trans  &trans     &trans     &trans  &kp DEL      &trans  &trans                                 &trans
+&kp F1  &kp F2  &kp F3     &kp F4     &kp F5                               &kp F6  &kp F7    &kp F8    &kp F9     &kp F10
+&trans  &trans  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &trans  &trans  &trans    &kp UP    &kp F11    &kp F12
+&trans  &trans  &kp HOME   &kp END    &trans  &trans               &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans     &trans     &trans  &kp DEL              &trans  &trans                                 &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4            &kp N5                         &kp N6         &kp N7  &kp N8    &kp N9    &kp N0
-&trans  &trans  &trans  &kp SINGLE_QUOTE  &kp GRAVE  &trans      &trans  &kp BACKSLASH  &trans  &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &trans  &trans            &trans     &trans      &trans  &trans         &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans            &trans     &trans      &trans  &trans                                     &trans
+&kp N1  &kp N2  &kp N3  &kp N4            &kp N5                         &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
+&trans  &trans  &trans  &kp SINGLE_QUOTE  &kp GRAVE  &trans      &trans  &kp BACKSLASH  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans     &trans      &trans  &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans     &trans      &trans  &trans                                 &trans
             >;
         };
 
