@@ -54,6 +54,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
     };
 
     macros {
@@ -139,10 +144,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R              &kp T                                                  &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
-&mt LCTRL A       &kp S     &kp D         &kp F              &kp G              &kp PRINTSCREEN      &kp EQUAL      &kp H        &kp J  &kp K           &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V              &kp B              &kp FSLH             &kp SEMICOLON  &kp N        &kp M  &kp COMMA       &kp DOT  &kp RIGHT_SHIFT
-&mkp MB1          &mkp MB2  &kp LEFT_ALT  &mmt LEFT_WIN MB1  &mt RIGHT_ALT TAB  &lt 2 SPACE          &lt 3 BSPC     &lt 1 MINUS                                  &mo 6
+&kp Q             &kp W            &kp E      &kp R             &kp T                                               &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
+&mt LCTRL A       &kp S            &kp D      &kp F             &kp G                &kp EQUAL          &mkp MB2    &kp H        &kp J  &kp K           &kp L    &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X            &kp C      &kp V             &kp B                &kp SEMICOLON      &mkp MB1    &kp N        &kp M  &kp COMMA       &kp DOT  &kp RIGHT_SHIFT
+&kp LEFT_ALT      &kp PRINTSCREEN  &kp SLASH  &mt LEFT_WIN TAB  &mt RIGHT_ALT SPACE  &lt 2 SPACE        &lt 3 BSPC  &lt 1 MINUS                                  &mo 6
             >;
         };
 
