@@ -27,7 +27,7 @@
     // };
 };
 
-&sl { release-after-ms = <200>; };
+&sl { release-after-ms = <170>; };
 
 &lt { flavor = "hold-preferred"; };
 
