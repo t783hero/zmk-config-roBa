@@ -167,10 +167,10 @@
 
         MISSIONCTRL {
             bindings = <
-&kp TAB  &trans            &kp LG(UP)    &trans             &trans                                 &trans  &trans  &trans  &trans  &trans
-&trans   &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans  &trans          &kp C_BRI_INC  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LA(LG(K))     &kp C_VOL_DN  &kp C_VOL_UP       &trans  &kp C_MUTE      &kp C_BRI_DEC  &trans  &trans  &trans  &trans  &trans
-&trans   &trans            &trans        &trans             &trans  &kp BSPC        &trans         &trans                          &trans
+&kp TAB  &trans            &kp LG(UP)    &trans             &trans                                   &trans  &trans  &trans  &trans  &trans
+&trans   &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans    &trans          &kp C_BRI_INC  &trans  &trans  &trans  &trans  &trans
+&trans   &kp LA(LG(K))     &kp C_VOL_DN  &kp C_VOL_UP       &trans    &kp C_MUTE      &kp C_BRI_DEC  &trans  &trans  &trans  &trans  &trans
+&trans   &trans            &trans        &trans             &kp BSPC  &trans          &trans         &trans                          &trans
             >;
         };
 
