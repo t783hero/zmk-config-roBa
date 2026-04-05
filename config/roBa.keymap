@@ -149,10 +149,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1          &kp F2   &kp F3     &kp F4     &kp F5                                &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
-&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &kp F11  &kp F12  &trans    &kp UP    &trans     &trans
-&trans          &trans   &trans     &trans     &trans  &kp BSPC             &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans          &trans   &trans     &trans     &trans  &kp DEL              &trans   &trans                                  &trans
+&kp F1          &kp F2   &kp F3     &kp F4     &kp F5                                &kp F6    &kp F7    &kp F8     &kp F9  &kp F10
+&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &kp F11  &kp F12   &kp UP    &trans     &trans  &trans
+&trans          &trans   &trans     &trans     &trans  &kp BSPC             &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans          &trans   &trans     &trans     &trans  &kp DEL              &trans   &trans                                 &trans
             >;
         };
 
@@ -167,10 +167,10 @@
 
         MISSIONCTRL {
             bindings = <
-&trans  &trans            &kp LG(UP)    &trans             &trans                                 &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans  &trans          &kp C_BRI_INC  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LG(K))     &kp C_VOL_DN  &kp C_VOL_UP       &trans  &kp C_MUTE      &kp C_BRI_DEC  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans        &trans             &trans  &trans          &trans         &trans                          &trans
+&trans  &kp LS(LA(LC(LG(W))))  &kp LG(UP)                &trans             &kp LS(LA(LC(LG(T))))                                    &trans                 &trans  &trans  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))
+&trans  &kp LS(LG(LEFT))       &kp LG(DOWN)              &kp LS(LG(RIGHT))  &kp C_VOL_UP           &kp C_MUTE         &kp C_BRI_INC  &trans                 &trans  &trans  &trans                 &trans
+&trans  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LEFT_WIN)))  &trans             &kp C_VOL_DN           &kp LA(LG(K))      &kp C_BRI_DEC  &kp LS(LA(LC(LG(N))))  &trans  &trans  &trans                 &trans
+&trans  &trans                 &trans                    &trans             &trans                 &trans             &trans         &trans                                                        &trans
             >;
         };
 
@@ -194,10 +194,10 @@
 
         SYSTEM {
             bindings = <
-&kp LS(LA(LG(LC(O))))  &kp LS(LA(LC(LG(T))))  &kp LS(LA(LC(LG(N))))  &kp LS(LC(LA(LG(X))))  &kp LS(LA(LC(LG(P))))                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans                 &trans                 &trans                 &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(C))))  &trans      &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans                 &kp NUMBER_1           &kp NUMBER_2           &kp NUMBER_3           &trans                 &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
-&trans                 &trans                 &trans                 &trans                 &trans                 &trans      &trans       &trans                                                  &trans
+&trans  &trans        &trans        &trans        &trans                                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &bt BT_CLR_ALL      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bt BT_CLR          &bootloader  &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans  &trans              &trans       &trans                                                  &trans
             >;
         };
     };
