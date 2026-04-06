@@ -167,10 +167,10 @@
 
         MISSIONCTRL {
             bindings = <
-&trans  &kp LS(LA(LC(LG(W))))  &kp LG(UP)                &trans             &kp LS(LA(LC(LG(T))))                                    &trans                 &trans  &trans  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))
-&trans  &kp LS(LG(LEFT))       &kp LG(DOWN)              &kp LS(LG(RIGHT))  &kp C_VOL_UP           &kp C_MUTE         &kp C_BRI_INC  &trans                 &trans  &trans  &trans                 &trans
-&trans  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LEFT_WIN)))  &trans             &kp C_VOL_DN           &kp LA(LG(K))      &kp C_BRI_DEC  &kp LS(LA(LC(LG(N))))  &trans  &trans  &trans                 &trans
-&trans  &trans                 &trans                    &trans             &trans                 &trans             &trans         &trans                                                        &trans
+&trans  &trans            &kp LG(UP)                &trans             &trans                                          &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LG(LEFT))  &kp LG(DOWN)              &kp LS(LG(RIGHT))  &kp C_VOL_UP  &kp C_MUTE         &kp C_BRI_INC  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp LS(LA(LC(LEFT_WIN)))  &trans             &kp C_VOL_DN  &kp LA(LG(K))      &kp C_BRI_DEC  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans                    &trans             &trans        &trans             &trans         &trans                          &trans
             >;
         };
 
