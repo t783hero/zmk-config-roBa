@@ -142,8 +142,8 @@
             bindings = <
 &kp Q             &kp W    &kp E          &kp R              &kp T                                                     &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
 &mt LCTRL A       &kp S    &kp D          &kp F              &kp G              &kp EQUAL        &kp LEFT_PARENTHESIS  &kp H        &kp J  &kp K           &kp L    &mt RCTRL SEMICOLON
-&mt LEFT_SHIFT Z  &kp X    &kp C          &kp V              &kp B              &kp TAB          &kp ENTER             &kp N        &kp M  &kp COMMA       &kp DOT  &mt RSHIFT SLASH
-&kp HOME          &kp END  &kp RIGHT_ALT  &mmt LEFT_WIN MB1  &mmt LEFT_ALT MB2  &lt 3 SPACE      &lt 1 BSPC            &lt 2 MINUS                                  &mo 6
+&mt LEFT_SHIFT Z  &kp X    &kp C          &kp V              &kp B              &kp BSPC         &kp ENTER             &kp N        &kp M  &kp COMMA       &kp DOT  &mt RSHIFT SLASH
+&kp HOME          &kp END  &kp RIGHT_ALT  &mmt LEFT_WIN MB1  &mmt LEFT_ALT MB2  &lt 3 SPACE      &lt 1 TAB             &lt 2 MINUS                                  &mo 6
             >;
         };
 
