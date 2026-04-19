@@ -3,13 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <120>;
-    tapping-term-ms = <170>;
-    hold-trigger-on-release;
-};
+&mt { flavor = "hold-preferred"; };
 
 &trackball {
     scroll-layers = <5>;
@@ -140,10 +134,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W    &kp E      &kp R              &kp T                                                    &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
-&mt LCTRL A       &kp S    &kp D      &kp F              &kp G              &kp SEMI       &mt RIGHT_SHIFT SLASH  &kp H        &kp J  &kp K           &kp L    &mt RCTRL LBKT
-&mt LEFT_SHIFT Z  &kp X    &kp C      &kp V              &kp B              &kp SPACE      &mt RCTRL ENTER        &kp N        &kp M  &kp COMMA       &kp DOT  &mt RSHIFT RBKT
-&kp HOME          &kp END  &kp EQUAL  &mmt LEFT_WIN MB1  &mmt LEFT_ALT MB2  &lt 3 TAB      &lt 1 BSPC             &lt 2 MINUS                                  &lt 6 RIGHT_ALT
+&kp Q     &kp W    &kp E      &kp R              &kp T                                                    &kp Y        &kp U  &scroll_lt 5 I  &kp O    &kp P
+&kp A     &kp S    &kp D      &kp F              &kp G              &kp SEMI       &mt RIGHT_SHIFT SLASH  &kp H        &kp J  &kp K           &kp L    &mt RCTRL LBKT
+&kp Z     &kp X    &kp C      &kp V              &kp B              &kp SPACE      &mt RCTRL ENTER        &kp N        &kp M  &kp COMMA       &kp DOT  &mt RSHIFT RBKT
+&kp HOME  &kp END  &kp EQUAL  &mmt LEFT_WIN MB1  &mmt LEFT_ALT MB2  &lt 3 TAB      &lt 1 BSPC             &lt 2 MINUS                                  &lt 6 RIGHT_ALT
             >;
         };
 
@@ -167,8 +161,8 @@
 
         MISSIONCTRL {
             bindings = <
-&trans  &trans            &kp LG(UP)                &trans             &trans                                          &trans  &trans           &trans       &trans  &trans
-&trans  &kp LS(LG(LEFT))  &kp LG(DOWN)              &kp LS(LG(RIGHT))  &kp C_VOL_UP  &kp C_MUTE         &kp C_BRI_INC  &trans  &kp LA(LS(TAB))  &kp LA(TAB)  &trans  &trans
+&trans  &trans            &kp LG(UP)                &trans             &trans                                          &trans  &trans           &kp LA(TAB)  &trans  &trans
+&trans  &kp LS(LG(LEFT))  &kp LG(DOWN)              &kp LS(LG(RIGHT))  &kp C_VOL_UP  &kp C_MUTE         &kp C_BRI_INC  &trans  &kp LA(LS(TAB))  &trans       &trans  &trans
 &trans  &trans            &kp LS(LA(LC(LEFT_WIN)))  &trans             &kp C_VOL_DN  &kp LA(LG(K))      &kp C_BRI_DEC  &trans  &trans           &trans       &trans  &trans
 &trans  &trans            &trans                    &trans             &trans        &trans             &trans         &trans                                        &trans
             >;
@@ -176,10 +170,10 @@
 
         MOUSE {
             bindings = <
-&trans                       &trans  &trans  &trans  &trans                      &trans  &trans             &trans             &trans  &trans
-&mt_to_layer_0 LCTRL A       &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp_exit_AML MB2  &trans  &mt_to_layer_0 RCTRL ENTER
-&mt_to_layer_0 LEFT_SHIFT Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans             &trans  &trans
-&trans                       &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
+&trans     &trans  &trans  &trans  &trans                      &trans  &trans             &mkp_exit_AML MB2  &trans  &trans
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans             &trans  &mt_to_layer_0 RCTRL LBKT
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans             &trans  &mt_to_layer_0 RIGHT_SHIFT RBKT
+&trans     &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
