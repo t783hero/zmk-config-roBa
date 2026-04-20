@@ -176,10 +176,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &mkp_exit_AML MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans             &trans  &mt_to_layer_0 RCTRL LBKT
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans             &trans  &mt_to_layer_0 RIGHT_SHIFT RBKT
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
+&trans                  &trans  &trans  &trans  &trans                      &trans  &trans             &mkp_exit_AML MB2  &trans  &trans
+&mt_to_layer_0 LCTRL A  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans             &trans  &mt_to_layer_0 RCTRL LBKT
+&mt_to_layer_0 LSHFT Z  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans             &trans  &mt_to_layer_0 RIGHT_SHIFT RBKT
+&trans                  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
