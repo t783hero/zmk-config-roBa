@@ -143,19 +143,19 @@
 
         FUNCTION {
             bindings = <
-&kp F1          &kp F2   &kp F3     &kp F4     &kp F5                                &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
-&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &kp F11  &kp F12  &trans    &kp UP    &trans     &trans
-&trans          &trans   &trans     &trans     &trans  &kp BSPC             &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans          &trans   &trans     &trans     &trans  &kp DEL              &trans   &trans                                  &trans
+&kp F1          &kp F2   &kp F3     &kp F4     &kp F5                               &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
+&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &trans  &kp F11  &kp F12   &kp UP    &trans     &trans
+&kp LEFT_SHIFT  &trans   &trans     &trans     &trans  &kp BSPC             &trans  &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans          &trans   &trans     &trans     &trans  &kp DEL              &trans  &trans                                  &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp N1            &kp N2    &kp N3     &kp N4      &kp N5                                &kp N6     &kp N7    &kp N8    &kp N9    &kp N0
-&mt LCTRL EXCL    &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &trans         &trans    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &mt RCTRL RPAR
-&mt LSHIFT EQUAL  &kp PLUS  &kp MINUS  &kp SLASH   &kp TILDE    &kp GRAVE      &kp BSLH  &kp LBKT   &kp RBKT  &trans    &trans    &kp RSHIFT
-&trans            &trans    &trans     &trans      &trans       &trans         &trans    &trans                                   &trans
+&kp N1            &kp N2    &kp N3     &kp N4      &kp N5                           &kp N6     &kp N7    &kp N8     &kp N9    &kp N0
+&mt LCTRL EXCL    &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &trans      &trans  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &mt RCTRL RPAR
+&mt LSHIFT EQUAL  &kp PLUS  &kp MINUS  &kp SLASH   &kp TILDE    &trans      &trans  &kp LBKT   &kp RBKT  &kp GRAVE  &kp BSLH  &kp RSHIFT
+&trans            &trans    &trans     &trans      &trans       &trans      &trans  &trans                                    &trans
             >;
         };
 
