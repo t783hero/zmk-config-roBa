@@ -5,7 +5,7 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <160>;
     require-prior-idle-ms = <170>;
     quick-tap-ms = <150>;
     hold-trigger-on-release;
@@ -81,16 +81,6 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
         mt_to_layer_0: mt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TO_LAYER_0";
@@ -102,16 +92,6 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <120>;
             hold-trigger-on-release;
-        };
-
-        lmt: lmt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LMT";
-            bindings = <&mo>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
         };
 
         mmt: mmt {
@@ -130,8 +110,11 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <160>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <170>;
+            hold-trigger-on-release;
         };
     };
 
