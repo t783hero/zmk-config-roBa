@@ -116,7 +116,6 @@
             flavor = "tap-preferred";
             quick-tap-ms = <150>;
             require-prior-idle-ms = <170>;
-            hold-trigger-on-release;
         };
 
         tap_mt: tap_mt {
