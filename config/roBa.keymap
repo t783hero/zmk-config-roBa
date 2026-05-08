@@ -37,11 +37,6 @@
             key-positions = <18 19>;
         };
 
-        henkann {
-            bindings = <&kp LS(CAPS)>;
-            key-positions = <8 9>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
@@ -146,10 +141,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1          &kp F2   &kp F3     &kp F4     &kp F5                                &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
-&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN  &trans  &kp PRINTSCREEN      &kp F11  &kp F12  &trans    &kp UP    &trans     &trans
-&trans          &trans   &trans     &trans     &trans  &kp BSPC             &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans          &trans   &trans     &trans     &trans  &kp DEL              &trans   &trans                                  &trans
+&kp F1          &kp F2   &kp F3     &kp F4                     &kp F5                                                      &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
+&mt LCTRL HOME  &kp END  &kp PG_UP  &kp PG_DN                  &trans                        &kp PRINTSCREEN      &kp F11  &kp F12  &trans    &kp UP    &trans     &trans
+&trans          &trans   &trans     &trans                     &trans                        &kp BSPC             &trans   &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans          &trans   &trans     &mt LEFT_WIN INT_MUHENKAN  &mt LEFT_ALT INTERNATIONAL_4  &kp DEL              &trans   &trans                                  &trans
             >;
         };
 
