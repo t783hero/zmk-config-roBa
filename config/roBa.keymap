@@ -29,9 +29,9 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <180>;
     quick-tap-ms = <150>;
-    require-prior-idle-ms = <130>;
+    require-prior-idle-ms = <80>;
     hold-trigger-on-release;
 };
 
