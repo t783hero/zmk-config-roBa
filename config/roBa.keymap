@@ -177,8 +177,8 @@
         MISSIONCTRL {
             bindings = <
 &trans        &trans        &trans                    &trans         &trans                                   &kp LG(TAB)   &kp LA(TAB)  &kp LA(LS(TAB))  &trans  &trans
-&trans        &trans        &trans                    &trans         &trans        &trans      &trans         &kp LG(UP)    &kp PG_UP    &kp HOME         &trans  &trans
-&trans        &trans        &kp LS(LA(LC(LEFT_WIN)))  &kp LG(LS(V))  &trans        &trans      &trans         &kp LG(DOWN)  &kp PG_DN    &kp END          &trans  &trans
+&trans        &trans        &trans                    &trans         &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP    &kp HOME         &trans  &trans
+&trans        &trans        &kp LS(LA(LC(LEFT_WIN)))  &kp LG(LS(V))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN    &kp END          &trans  &trans
 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE                &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                           &trans
             >;
         };
