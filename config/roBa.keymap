@@ -53,6 +53,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
+
+        mo_3 {
+            bindings = <&mo 3>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -155,7 +160,7 @@
             bindings = <
 &kp F1    &kp F2   &kp F3     &kp F4                     &kp F5                                              &kp F6            &kp F7    &kp F8    &kp F9     &kp F10
 &kp HOME  &kp END  &kp PG_UP  &kp PG_DN                  &kp LALT                      &trans       &kp F11  &kp F12           &trans    &kp UP    &trans     &trans
-&trans    &trans   &trans     &trans                     &kp BSPC                      &trans       &trans   &kp LS(LG(LEFT))  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans    &trans   &trans     &kp LG(LC(LA(V)))          &kp BSPC                      &trans       &trans   &kp LS(LG(LEFT))  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans    &trans   &trans     &mt LEFT_WIN INT_MUHENKAN  &mt LEFT_ALT INTERNATIONAL_4  &kp DEL      &trans   &trans                                           &kp PRINTSCREEN
             >;
         };
@@ -171,10 +176,10 @@
 
         MISSIONCTRL {
             bindings = <
-&trans        &trans        &trans                    &trans        &trans                                   &trans     &trans            &kp LA(TAB)   &trans             &trans
-&trans        &trans        &trans                    &trans        &trans        &trans      &trans         &trans     &kp LG(TAB)       &kp LG(UP)    &trans             &trans
-&trans        &trans        &kp LS(LA(LC(LEFT_WIN)))  &trans        &trans        &trans      &trans         &trans     &kp LG(LS(LEFT))  &kp LG(DOWN)  &kp LG(LS(RIGHT))  &trans
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE                &kp C_VOL_DN  &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                                     &trans
+&trans        &trans        &trans                    &trans         &trans                                   &kp LG(TAB)   &kp LA(TAB)  &kp LA(LS(TAB))  &trans  &trans
+&trans        &trans        &trans                    &trans         &trans        &trans      &trans         &kp LG(UP)    &kp PG_UP    &kp HOME         &trans  &trans
+&trans        &trans        &kp LS(LA(LC(LEFT_WIN)))  &kp LG(LS(V))  &trans        &trans      &trans         &kp LG(DOWN)  &kp PG_DN    &kp END          &trans  &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE                &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                           &trans
             >;
         };
 
