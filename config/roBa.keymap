@@ -181,10 +181,10 @@
 
         MISSIONCTRL {
             bindings = <
-&trans        &trans        &trans         &trans             &trans                                   &kp LG(TAB)   &kp LA(TAB)  &kp LA(LS(TAB))  &trans  &trans
-&trans        &trans        &trans         &trans             &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP    &kp HOME         &trans  &trans
-&trans        &trans        &kp LG(LS(V))  &kp LG(LA(LC(V)))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN    &kp END          &trans  &trans
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE     &kp C_VOL_DN       &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                           &trans
+&trans        &trans        &trans             &trans             &trans                                   &kp LG(TAB)   &kp LA(TAB)  &kp LA(LS(TAB))  &trans  &trans
+&trans        &trans        &trans             &trans             &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP    &kp HOME         &trans  &trans
+&trans        &trans        &kp LG(LS(LA(V)))  &kp LG(LA(LC(V)))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN    &kp END          &trans  &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                           &trans
             >;
         };
 
@@ -217,10 +217,10 @@
 
         M365 {
             bindings = <
-&trans  &kp LG(LC(LA(LS(W))))  &trans                    &trans  &kp LG(LC(LA(LS(T))))                      &trans                 &trans  &trans  &kp LG(LC(LA(LS(O))))  &kp LG(LC(LA(LS(P))))
-&trans  &trans                 &trans                    &trans  &trans                 &trans      &trans  &trans                 &trans  &trans  &trans                 &trans
-&trans  &kp LG(LC(LA(LS(X))))  &kp LS(LA(LC(LEFT_WIN)))  &trans  &trans                 &trans      &trans  &kp LG(LA(LS(LC(N))))  &trans  &trans  &trans                 &trans
-&trans  &trans                 &trans                    &trans  &trans                 &trans      &trans  &trans                                                        &trans
+&trans  &kp LG(LC(LA(LS(W))))  &trans                    &trans             &kp LG(LC(LA(LS(T))))                             &trans                 &trans  &trans  &kp LG(LC(LA(LS(O))))  &kp LG(LC(LA(LS(P))))
+&trans  &trans                 &trans                    &trans             &trans                 &trans             &trans  &trans                 &trans  &trans  &trans                 &trans
+&trans  &kp LG(LC(LA(LS(X))))  &kp LS(LA(LC(LEFT_WIN)))  &trans             &trans                 &trans             &trans  &kp LG(LA(LS(LC(N))))  &trans  &trans  &trans                 &trans
+&trans  &trans                 &trans                    &kp LG(LC(MINUS))  &kp LG(LC(EQUAL))      &kp LG(LC(T))      &trans  &trans                                                        &trans
             >;
         };
     };
