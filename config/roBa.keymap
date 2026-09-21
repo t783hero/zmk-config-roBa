@@ -95,9 +95,10 @@
                 <&macro_tap>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sk LALT>,
+                <&sk_for_alt_tab LALT>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_ALT>,
+                <&macro_press>;
 
             label = "ALT_TAB";
         };
@@ -156,6 +157,15 @@
             #binding-cells = <1>;
             release-after-ms = <170>;
             quick-release;
+        };
+
+        sk_for_alt_tab: sk_for_alt_tab {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_FOR_ALT_TAB";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <5000>;
+            ignore-modifiers;
         };
     };
 
