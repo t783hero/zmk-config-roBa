@@ -87,9 +87,16 @@
         };
 
         alt_tab: alt_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&kt LEFT_ALT>,
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&sk LALT>;
+
             label = "ALT_TAB";
         };
     };
@@ -182,10 +189,10 @@
 
         MISSIONCTRL {
             bindings = <
-&trans        &trans        &trans             &trans             &trans                                   &kp LG(TAB)   &kp LA(LS(TAB))  &kp LA(TAB)  &trans  &trans
-&trans        &trans        &trans             &trans             &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP        &kp HOME     &trans  &trans
-&trans        &trans        &kp LG(LS(LA(V)))  &kp LG(LA(LC(V)))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN        &kp END      &trans  &trans
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                           &trans
+&trans        &trans        &trans             &trans             &trans                                   &kp LG(TAB)   &alt_tab LS(TAB)  &alt_tab TAB  &trans  &trans
+&trans        &trans        &trans             &trans             &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP         &kp HOME      &trans  &trans
+&trans        &trans        &kp LG(LS(LA(V)))  &kp LG(LA(LC(V)))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN         &kp END       &trans  &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                             &trans
             >;
         };
 
