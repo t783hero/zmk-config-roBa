@@ -201,7 +201,7 @@
 
         MISSIONCTRL {
             bindings = <
-&trans        &trans        &trans             &trans             &trans                                   &kp LG(TAB)   &alt_tab LS(TAB)  &alt_tab TAB  &trans  &trans
+&trans        &trans        &trans             &trans             &trans                                   &kp LA(TAB)   &alt_tab LS(TAB)  &alt_tab TAB  &trans  &trans
 &trans        &trans        &trans             &trans             &trans        &trans      &kp RSHIFT     &kp LG(UP)    &kp PG_UP         &kp HOME      &trans  &trans
 &trans        &trans        &kp LG(LS(LA(V)))  &kp LG(LA(LC(V)))  &trans        &trans      &kp RCTRL      &kp LG(DOWN)  &kp PG_DN         &kp END       &trans  &trans
 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP  &trans      &kp LG(LA(K))  &kp K_APP                                             &trans
