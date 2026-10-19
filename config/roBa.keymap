@@ -155,7 +155,7 @@
             label = "SL_FOR_EXIT_AML";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <170>;
+            release-after-ms = <150>;
             quick-release;
         };
 
